@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+}
+body{
+	background: url(./img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+.note{
+	background: rgba(0, 0, 0, 0.5);
+	height: 400px;
+	margin: 20px;
+	width: 400px;
+	box-shadow: 
+	0px 0px 30px #fff,
+	0px 0px 40px #fff;
+	border-radius: 15px;
+}
+.note .tools{
+	padding: 0.8rem;
+	display: flex;
+	justify-content: flex-end;
+	border-bottom: 1px solid #fff;
+}
+.note .tools button{
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 1.5rem;
+	margin-left: 1.2rem;
+	transition: 0.5s;
+}
+.note .tools button:nth-child(2):hover{
+	color: crimson;
+}
+.note .tools button:nth-child(1){
+	color: crimson;
+}
+.note .tools button:nth-child(1).activeColor{
+	color: #fff;
+}
+.note .main{
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	padding: 1rem;
+	font-size: 1.2rem;
+	overflow: hidden;
+	background: transparent;
+}
+.note textarea{
+	width: 100%;
+	height: 200% !important;
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-family: inherit;
+	padding: 1rem;
+	resize: none;
+}
+.note textarea::placeholder{
+	color: #ffffff;
+}
+.note .hidden{
+	display: none;
+}
+
+.addNote{
+	margin: auto;
+	width: 200px;
+	height: 50px;
+	background: transparent;
+	border-radius: 30px;
+	border: 2px solid #fff;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 1.5rem;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+.addNote i{
+	margin-right: 1rem;
+}
+.addNote:hover{
+	color: #000;
+	background: #fff;
+	box-shadow: 
+	0px 0px 10px #fff,
+	0px 0px 20px #fff,
+	0px 0px 30px #fff,
+	0px 0px 40px #fff,
+	0px 0px 50px #fff,
+	0px 0px 60px #fff,
+	0px 0px 70px #fff,
+	0px 0px 80px #fff,
+	0px 0px 90px #fff,
+	0px 0px 100px #fff,
+	0px 0px 110px #fff,
+	0px 0px 120px #fff,
+	0px 0px 130px #fff,
+	0px 0px 140px #fff,
+	0px 0px 150px #fff,
+	0px 0px 160px #fff,
+	0px 0px 170px #fff,
+	0px 0px 180px #fff,
+	0px 0px 190px #fff,
+	0px 0px 200px #fff;
+}
+.copyright{
+	color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1rem;
+	opacity: 1;
+}
